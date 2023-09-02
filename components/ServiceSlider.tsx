@@ -30,8 +30,8 @@ const serviceData = [
     },
 ];
 
-const ServiceSlider = () => {
+function ServiceSlider() {
     return <div>Service Slider</div>;
-};
+}
 
 export default ServiceSlider;

@@ -44,8 +44,8 @@ const workSlides = {
     ],
 };
 
-const WorkSlider = () => {
+function WorkSlider() {
     return <div>Work Slider</div>;
-};
+}
 
 export default WorkSlider;

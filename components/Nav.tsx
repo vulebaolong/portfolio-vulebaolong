@@ -25,7 +25,7 @@ import Link from "next/link";
 // next router
 import { useRouter } from "next/router";
 
-const Nav = () => {
+function Nav() {
     const router = useRouter();
     const pathname = router.pathname;
 
@@ -56,6 +56,6 @@ const Nav = () => {
             </div>
         </nav>
     );
-};
+}
 
 export default Nav;
