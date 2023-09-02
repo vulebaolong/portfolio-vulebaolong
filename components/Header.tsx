@@ -1,6 +1,4 @@
 function Header() {
-  return (
-    <div>Header</div>
-  )
+    return <header className="absolute z-30 w-full h-40"></header>;
 }
-export default Header
+export default Header;
