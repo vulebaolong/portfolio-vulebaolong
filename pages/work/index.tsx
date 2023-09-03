@@ -6,12 +6,18 @@ import WorkSlider from "@/components/WorkSlider";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import ParticlesColors from "@/components/ParticlesColors";
 
 function Work() {
     return (
         <div className="h-full bg-primary/30 py-36 flex items-center">
+            <div className="w-full h-screen absolute right-0 bottom-0 z-0">
+                <ParticlesColors />
+            </div>
+
             <Circles />
-            <div className="container mx-auto">
+
+            <div className="container mx-auto relative">
                 <div className="flex flex-col xl:flex-row gap-x-8">
                     {/* text */}
                     <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">

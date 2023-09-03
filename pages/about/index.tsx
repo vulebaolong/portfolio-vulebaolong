@@ -13,6 +13,7 @@ import { fadeIn } from "@/variants";
 
 // component
 import CountUp from "react-countup";
+import ParticlesTriangles from "@/components/ParticlesTriangles";
 
 //  data
 const aboutData = [
@@ -99,6 +100,11 @@ const About = () => {
                 <Avatar />
             </motion.div>
 
+            <div className="w-[1200px] h-screen absolute right-0 bottom-0">
+                <ParticlesTriangles />
+            </div>
+
+            {/* body */}
             <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
                 {/* text */}
                 <div className="flex-1 flex flex-col justify-center">

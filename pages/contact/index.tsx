@@ -76,7 +76,7 @@ function Contact() {
                             </Form.Item>
 
                             <Form.Item<FieldType> name="message" rules={[{ required: true, message: "Please input your message!" }]}>
-                                <Input.TextArea rows={5} placeholder="message" className="textarea text-white" />
+                                <Input.TextArea rows={5} placeholder="message" className="textarea " />
                             </Form.Item>
 
                             <Form.Item>

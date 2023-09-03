@@ -2,16 +2,17 @@
 import Image from "next/image";
 
 // components
-import ParticlesContainer from "@/components/ParticlesContainer";
 import ProjectsBtn from "@/components/ProjectsBtn";
 import Avatar from "@/components/Avatar";
+import ParticlesLinks from "@/components/ParticlesLinks";
 
 // framer motion
 import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "@/variants";
-const Home = () => {
+
+function Home() {
     const dtTextDiv = `xl:pt-40 xl:text-left`;
     const dtSubtitle = `xl:max-w-xl xl:mx-0 xl:mb-16`;
     const mbBtn = `xl:hidden`;
@@ -22,7 +23,7 @@ const Home = () => {
         <div className="bg-primary/60 h-full">
             {/* text */}
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-                <div className={`text-center flex flex-col justify-center mx-auto h-full container ${dtTextDiv}`}>
+                <div className={`text-center relative flex flex-col justify-center mx-auto h-full container ${dtTextDiv}`}>
                     {/* title */}
                     <motion.h1 className="h1" variants={fadeIn("down", 0.2)} initial="hidden" animate="show" exit="hidden">
                         Transforming ideas <br />
@@ -58,7 +59,7 @@ const Home = () => {
                 ></motion.div>
 
                 {/* particles */}
-                <ParticlesContainer />
+                <ParticlesLinks />
 
                 {/* avatar img */}
                 <motion.div
@@ -73,6 +74,6 @@ const Home = () => {
             </div>
         </div>
     );
-};
+}
 
 export default Home;

@@ -1,14 +1,14 @@
-import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
+import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 
-function ParticlesContainer() {
+function ParticlesTriangles() {
     // init
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(typeof engine);
 
-        await loadFull(engine);
+        await loadTrianglesPreset(engine);
     }, []);
 
     const particlesLoaded = useCallback(async () => {}, []);
@@ -16,48 +16,27 @@ function ParticlesContainer() {
     return (
         <Particles
             className="w-full h-full absolute top-0 left-0 translate-z-0"
-            id="tsparticles"
+            id="ParticlesTriangles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                fullScreen: { enable: false },
+                preset: "triangles",
+                fullScreen: { enable: false, zIndex: -1 },
                 background: {
                     color: {
                         value: "",
                     },
                 },
                 fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: false,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                        push: {
-                            quantity: 90,
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4,
-                        },
-                    },
-                },
                 particles: {
                     color: {
-                        value: "#e68e2e",
+                        value: "#e62e2e",
                     },
                     links: {
-                        color: "#f5d393",
-                        distance: 150,
+                        color: "#f59393",
+                        distance: 200,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 0.3,
                         width: 1,
                     },
                     collisions: {
@@ -76,9 +55,9 @@ function ParticlesContainer() {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 450,
                         },
-                        value: 80,
+                        value: 20,
                     },
                     opacity: {
                         value: 0.5,
@@ -95,4 +74,4 @@ function ParticlesContainer() {
         />
     );
 }
-export default ParticlesContainer;
+export default ParticlesTriangles;

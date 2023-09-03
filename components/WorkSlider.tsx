@@ -58,7 +58,7 @@ function WorkSlider() {
                 clickable: true,
             }}
             modules={[Pagination]}
-            className="h-[280px] sm:h-[480px]"
+            className="h-[280px] sm:h-[520px] !pb-10"
         >
             {workSlides.map((slide, index) => {
                 return (
@@ -71,7 +71,7 @@ function WorkSlider() {
                                     width={0}
                                     height={0}
                                     sizes="100vw"
-                                    style={{ width: "100%", height: "100%" }} // optional
+                                    style={{ width: "100%", height: "100%", objectFit: "cover" }} // optional
                                     alt="imgSlideWork"
                                 />
 
