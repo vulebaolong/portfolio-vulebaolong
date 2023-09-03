@@ -6,8 +6,12 @@ import { useState } from "react";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from "react-icons/fa";
 
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
+
+// framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+
+// component
 import CountUp from "react-countup";
 
 //  data
