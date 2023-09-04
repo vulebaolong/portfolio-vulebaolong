@@ -1,6 +1,6 @@
 // components
-import Bulb from "@/components/Bulb";
-import Circles from "@/components/Circles";
+import Bulb from "@/components/BulbRight";
+import Circles from "@/components/CirclesRight";
 import ServiceSlider from "@/components/ServiceSlider";
 import { fadeIn } from "@/variants";
 

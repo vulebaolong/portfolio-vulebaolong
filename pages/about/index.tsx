@@ -1,6 +1,5 @@
-import Avatar from "@/components/Avatar";
-import Circles from "@/components/Circles";
 import { useState } from "react";
+import CountUp from "react-countup";
 
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from "react-icons/fa";
@@ -12,8 +11,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 
 // component
-import CountUp from "react-countup";
 import ParticlesTriangles from "@/components/ParticlesTriangles";
+import CirclesRight from "@/components/CirclesRight";
+import Avatar from "@/components/Avatar";
 
 //  data
 const aboutData = [
@@ -93,7 +93,7 @@ const About = () => {
     const [index, setIndex] = useState(0);
     return (
         <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-            <Circles />
+            <CirclesRight />
 
             {/* avatar img */}
             <motion.div variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="hidden xl:flex absolute bottom-0 -left-[370px]">

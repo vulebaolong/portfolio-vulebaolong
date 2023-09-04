@@ -3,17 +3,17 @@ import { HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCent
 
 // nav data
 export const navData = [
-    { name: "home", path: "/", icon: <HiHome /> },
-    { name: "about", path: "/about", icon: <HiUser /> },
+    { name: "Home", path: "/", icon: <HiHome /> },
+    { name: "About", path: "/about", icon: <HiUser /> },
     // { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-    { name: "work", path: "/work", icon: <HiViewColumns /> },
+    { name: "Work", path: "/work", icon: <HiViewColumns /> },
     {
-        name: "testimonials",
+        name: "Testimonials",
         path: "/testimonials",
         icon: <HiChatBubbleBottomCenterText />,
     },
     {
-        name: "contact",
+        name: "Contact",
         path: "/contact",
         icon: <HiEnvelope />,
     },

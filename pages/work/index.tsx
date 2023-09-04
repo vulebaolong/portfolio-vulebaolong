@@ -1,12 +1,12 @@
 // components
-import Bulb from "@/components/Bulb";
-import Circles from "@/components/Circles";
 import WorkSlider from "@/components/WorkSlider";
+import CirclesLeft from "@/components/CirclesLeft";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 import ParticlesColors from "@/components/ParticlesColors";
+import BulbRight from "@/components/BulbRight";
 
 function Work() {
     return (
@@ -15,7 +15,7 @@ function Work() {
                 <ParticlesColors />
             </div>
 
-            <Circles />
+            <CirclesLeft />
 
             <div className="container mx-auto relative">
                 <div className="flex flex-col xl:flex-row gap-x-8">
@@ -37,7 +37,7 @@ function Work() {
                 </div>
             </div>
 
-            <Bulb />
+            <BulbRight />
         </div>
     );
 }
