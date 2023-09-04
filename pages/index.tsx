@@ -3,8 +3,8 @@ import Image from "next/image";
 
 // components
 import ProjectsBtn from "@/components/ProjectsBtn";
-import Avatar from "@/components/Avatar";
 import ParticlesLinks from "@/components/ParticlesLinks";
+import AvatarRight from "@/components/AvatarRight";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -16,20 +16,23 @@ function Home() {
     const dtTextDiv = `xl:pt-40 xl:text-left`;
     const dtSubtitle = `xl:max-w-xl xl:mx-0 xl:mb-16`;
     const mbBtn = `xl:hidden`;
-    const dtBtn = `xl:flex`;
+    const dtBtn = `xl:inline-block`;
     const dtBgImage = ` xl:bg-cover xl:bg-right xl:bg-no-repeat`;
-    const dtAvatar = `lg:bottom-0 lg:right-[8%]`;
+    const dtAvatar = `lg:bottom-0 lg:right-0`;
     return (
         <div className="bg-primary/60 h-full">
             {/* text */}
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
                 <div className={`text-center relative flex flex-col justify-center mx-auto h-full container ${dtTextDiv}`}>
                     {/* title */}
-                    <motion.h1 className="h1" variants={fadeIn("down", 0.2)} initial="hidden" animate="show" exit="hidden">
-                        Transforming ideas <br />
-                        Into
-                        <span className="text-accent">Digital Reality</span>
-                    </motion.h1>
+                    <div className="">
+                        <motion.p className="md:text-2xl" variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden">
+                            Hi, I am <span className="text-accent font-bold"> VULEBAOLONG</span>
+                        </motion.p>
+                        <motion.h1 className="h1" variants={fadeIn("left", 0.2)} initial="hidden" animate="show" exit="hidden">
+                            Front End - Back End <br /> Web Developer
+                        </motion.h1>
+                    </div>
 
                     {/* subtitle */}
                     <motion.p className={`max-w-sm mb-10 mx-auto ${dtSubtitle}`} variants={fadeIn("down", 0.3)} initial="hidden" animate="show" exit="hidden">
@@ -41,7 +44,7 @@ function Home() {
                     <div className={`flex justify-center relative ${mbBtn}`}>
                         <ProjectsBtn />
                     </div>
-                    <motion.div className={`hidden ${dtBtn}`} variants={fadeIn("down", 0.4)} initial="hidden" animate="show" exit="hidden">
+                    <motion.div className={`ProjectsBtn  hidden ${dtBtn}`} variants={fadeIn("down", 0.4)} initial="hidden" animate="show" exit="hidden">
                         <ProjectsBtn />
                     </motion.div>
                 </div>
@@ -69,7 +72,7 @@ function Home() {
                     exit="hidden"
                     className={`w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 ${dtAvatar}`}
                 >
-                    <Avatar />
+                    <AvatarRight />
                 </motion.div>
             </div>
         </div>
