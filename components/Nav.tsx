@@ -24,6 +24,7 @@ import Link from "next/link";
 
 // next router
 import { useRouter } from "next/router";
+import { Tooltip } from "antd";
 
 function Nav() {
     const router = useRouter();
@@ -38,19 +39,18 @@ function Nav() {
             <div className={`flex w-full items-center justify-between gap-y-10 px-4 py-8 h-[80px] bg-white/10 backdrop-blur-sm text-3xl ${dtNav_div}`}>
                 {navData.map((link, index) => {
                     return (
-                        <Link className={`${link.path === pathname && "text-accent"} relative flex items-center group hover:text-accent transition`} href={link.path} key={index}>
-                            {/* tooltip */}
-                            <div className={`absolute mr-14 right-0 hidden ${dtTooltip}`}>
-                                <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
-                                    <div className="text-[12px] leading-none font-semibold capitalize">{link.name}</div>
-                                </div>
-                                {/* triangle */}
-                                <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute left-full top-1/2 -translate-y-1/2"></div>
-                            </div>
-
-                            {/* icon */}
-                            <div>{link.icon}</div>
-                        </Link>
+                        <div key={index}>
+                            <Tooltip className="hidden xl:flex" title={link.name} placement="left">
+                                <Link className={`${link.path === pathname && "text-accent"} relative flex items-center hover:text-accent transition`} href={link.path}>
+                                    {/* icon */}
+                                    <div>{link.icon}</div>
+                                </Link>
+                            </Tooltip>
+                            <Link className={`${link.path === pathname && "text-accent"}  xl:hidden relative flex items-center hover:text-accent transition`} href={link.path}>
+                                {/* icon */}
+                                <div>{link.icon}</div>
+                            </Link>
+                        </div>
                     );
                 })}
             </div>
