@@ -27,8 +27,9 @@ const aboutData = [
                         {/* desktop */}
                         <img className="hidden sm:block" src="https://skillicons.dev/icons?i=ts,react,vue,redux,js,tailwind,bootstrap,python,vite,css,html" />
                         {/* mobile */}
-                        <div className="sm:hidden">
-                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=ts,react,vue,redux,js,tailwind,bootstrap,python,css,html" />
+                        <div className="sm:hidden space-y-2">
+                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=ts,react,vue,redux,js" />
+                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=tailwind,bootstrap,python,css,html" />
                         </div>
                     </>
                 ),

@@ -7,11 +7,11 @@ export const navData = [
     { name: "About", path: "/about", icon: <HiUser /> },
     // { name: "services", path: "/services", icon: <HiRectangleGroup /> },
     { name: "Work", path: "/work", icon: <HiViewColumns /> },
-    {
-        name: "Testimonials",
-        path: "/testimonials",
-        icon: <HiChatBubbleBottomCenterText />,
-    },
+    // {
+    //     name: "Testimonials",
+    //     path: "/testimonials",
+    //     icon: <HiChatBubbleBottomCenterText />,
+    // },
     {
         name: "Contact",
         path: "/contact",
