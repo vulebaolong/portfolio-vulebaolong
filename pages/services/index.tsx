@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 function Services() {
     return (
-        <div className="h-full bg-primary/30 py-36 flex items-center">
+        <section className="h-full bg-primary/30 py-36 flex items-center">
             <Circles />
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row gap-x-8">
@@ -32,7 +32,7 @@ function Services() {
             </div>
 
             <Bulb />
-        </div>
+        </section>
     );
 }
 

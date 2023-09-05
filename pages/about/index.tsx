@@ -116,7 +116,7 @@ const About = () => {
     const dtAvatar = `lg:bottom-0 lg:-left-56`;
 
     return (
-        <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+        <section className="h-full bg-primary/30 py-32 text-center xl:text-left">
             <CirclesRight />
 
             <div className="w-[1200px] h-screen absolute right-0 bottom-0">
@@ -221,7 +221,7 @@ const About = () => {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 };
 

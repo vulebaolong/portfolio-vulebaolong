@@ -8,7 +8,7 @@ import BulbLeft from "@/components/BulbLeft";
 
 function Testimonials() {
     return (
-        <div className="h-full bg-primary/30 py-32 text-center">
+        <section className="h-full bg-primary/30 py-32 text-center">
             <div className="container mx-auto h-full flex flex-col justify-center">
                 {/* title */}
                 <motion.h2 className="h2 mb-8 xl:mb-0" variants={fadeIn("up", 0.2)} initial="hidden" animate="show" exit="hidden">
@@ -22,7 +22,7 @@ function Testimonials() {
             </div>
 
             <BulbLeft />
-        </div>
+        </section>
     );
 }
 

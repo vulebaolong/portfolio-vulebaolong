@@ -27,7 +27,7 @@ function Contact() {
         console.log("Failed:", errorInfo);
     };
     return (
-        <div className="h-full bg-primary/30">
+        <section className="h-full bg-primary/30">
             <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
                 <BulbLeft />
 
@@ -94,7 +94,7 @@ function Contact() {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

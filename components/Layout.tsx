@@ -24,7 +24,7 @@ function Layout({ children }: LayoutProps) {
             <TopLeftImg />
             <Nav />
             <Header />
-            {children}
+            <main className="h-screen">{children}</main>
         </div>
     );
 }

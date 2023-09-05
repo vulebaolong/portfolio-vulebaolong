@@ -10,7 +10,7 @@ import BulbRight from "@/components/BulbRight";
 
 function Work() {
     return (
-        <div className="h-full bg-primary/30 py-36 flex items-center">
+        <section className="h-full bg-primary/30 py-36 flex items-center">
             <div className="w-full h-screen absolute right-0 bottom-0 z-0">
                 <ParticlesColors />
             </div>
@@ -39,7 +39,7 @@ function Work() {
             </div>
 
             <BulbRight />
-        </div>
+        </section>
     );
 }
 

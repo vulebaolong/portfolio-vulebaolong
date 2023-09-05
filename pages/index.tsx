@@ -27,7 +27,7 @@ function Home() {
     const dtBgImage = ` xl:bg-cover xl:bg-right xl:bg-no-repeat`;
     const dtAvatar = `lg:bottom-0 lg:right-0`;
     return (
-        <div className=" h-full">
+        <section className=" h-full">
             {/* text */}
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
                 <div className={`text-center relative pt-[137px] flex flex-col lg:justify-center mx-auto h-full container ${dtTextDiv}`}>
@@ -109,7 +109,7 @@ function Home() {
                     <AvatarRight />
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 }
 
