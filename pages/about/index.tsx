@@ -34,6 +34,7 @@ const aboutData = [
                                 height={0}
                                 style={{ width: "100%", height: "100%" }} // optional
                                 alt="iconsSkillFrontEnd"
+                                unoptimized
                             />
                         </div>
                         {/* mobile */}
@@ -46,6 +47,7 @@ const aboutData = [
                                     height={0}
                                     style={{ width: "100%", height: "100%" }} // optional
                                     alt="iconsSkillFrontEnd"
+                                    unoptimized
                                 />
                             </div>
                             <div className="h-[30px] mx-auto">
@@ -56,6 +58,7 @@ const aboutData = [
                                     height={0}
                                     style={{ width: "100%", height: "100%" }} // optional
                                     alt="iconsSkillFrontEnd"
+                                    unoptimized
                                 />
                             </div>
                         </div>
@@ -75,6 +78,7 @@ const aboutData = [
                                 height={0}
                                 style={{ width: "100%", height: "100%" }} // optional
                                 alt="iconsSkillBackEnd"
+                                unoptimized
                             />
                         </div>
                         {/* mobile */}
@@ -87,6 +91,7 @@ const aboutData = [
                                     height={0}
                                     style={{ width: "100%", height: "100%" }} // optional
                                     alt="iconsSkillBackEnd"
+                                    unoptimized
                                 />
                             </div>
                         </div>
@@ -106,6 +111,7 @@ const aboutData = [
                                 height={0}
                                 style={{ width: "100%", height: "100%" }} // optional
                                 alt="iconsSkillTool"
+                                unoptimized
                             />
                         </div>
                         {/* mobile */}
@@ -118,6 +124,7 @@ const aboutData = [
                                     height={0}
                                     style={{ width: "100%", height: "100%" }} // optional
                                     alt="iconsSkillTool"
+                                    unoptimized
                                 />
                             </div>
                         </div>

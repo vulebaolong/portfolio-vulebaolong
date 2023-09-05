@@ -12,6 +12,7 @@ function AvatarLeft() {
                 sizes="100vw"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }} // optional
                 alt="avatar"
+                priority={true}
             />
         </div>
     );

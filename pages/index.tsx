@@ -1,6 +1,3 @@
-// next image
-import Image from "next/image";
-import { FcDownload } from "react-icons/fc";
 // typist
 import Typewriter from "typewriter-effect";
 
@@ -18,6 +15,8 @@ import { fadeIn } from "@/variants";
 function Home() {
     const handleDownloadCv = () => {
         console.log(123);
+        // https://drive.google.com/u/0/uc?id=1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO&export=download
+        window.open('https://drive.google.com/u/0/uc?id=1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO&export=download', '_blank');
     };
 
     const dtTextDiv = `xl:pt-[90px] xl:text-left`;
@@ -34,7 +33,7 @@ function Home() {
                     {/* title */}
                     <div className="">
                         <motion.h2 className="md:text-2xl text-white/60" variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden">
-                            Hi, I am <span className="text-accent font-bold"> VULEBAOLONG</span>
+                            Hi, I am <span className="text-accent font-bold"> VU LE BAO LONG</span>
                         </motion.h2>
                         <motion.h1 className="h1" variants={fadeIn("left", 0.2)} initial="hidden" animate="show" exit="hidden">
                             <span>Front End</span>

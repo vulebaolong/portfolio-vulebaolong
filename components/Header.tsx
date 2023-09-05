@@ -13,7 +13,7 @@ function Header() {
     return (
         <header className={`absolute z-30 w-full flex items-center px-16 ${dtHeader}`}>
             <div className="container mx-auto">
-                <div className="flex flex-col lg:flex-row justify-between items-center gap-y-5 py-8">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-y-5 py-8 xl:py-0">
                     {/* logo */}
                     <Logo />
 
