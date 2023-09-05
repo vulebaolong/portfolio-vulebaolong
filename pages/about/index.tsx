@@ -14,6 +14,7 @@ import { fadeIn } from "@/variants";
 import ParticlesTriangles from "@/components/ParticlesTriangles";
 import CirclesRight from "@/components/CirclesRight";
 import AvatarLeft from "@/components/AvatarLeft";
+import Image from "next/image";
 
 //  data
 const aboutData = [
@@ -25,11 +26,38 @@ const aboutData = [
                 icons: (
                     <>
                         {/* desktop */}
-                        <img className="hidden sm:block" src="https://skillicons.dev/icons?i=ts,react,vue,redux,js,tailwind,bootstrap,python,vite,css,html" />
+                        <div className="hidden sm:block h-[48px]">
+                            <Image
+                                loader={({ src, width, quality }) => src}
+                                src={"https://skillicons.dev/icons?i=ts,react,vue,redux,js,tailwind,bootstrap,python,vite,css,html"}
+                                width={0}
+                                height={0}
+                                style={{ width: "100%", height: "100%" }} // optional
+                                alt="iconsSkillFrontEnd"
+                            />
+                        </div>
                         {/* mobile */}
                         <div className="sm:hidden space-y-2">
-                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=ts,react,vue,redux,js" />
-                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=tailwind,bootstrap,python,css,html" />
+                            <div className="h-[30px] mx-auto">
+                                <Image
+                                    loader={({ src, width, quality }) => src}
+                                    src={"https://skillicons.dev/icons?i=ts,react,vue,redux,js"}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "100%", height: "100%" }} // optional
+                                    alt="iconsSkillFrontEnd"
+                                />
+                            </div>
+                            <div className="h-[30px] mx-auto">
+                                <Image
+                                    loader={({ src, width, quality }) => src}
+                                    src={"https://skillicons.dev/icons?i=tailwind,bootstrap,python,css,html"}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "100%", height: "100%" }} // optional
+                                    alt="iconsSkillFrontEnd"
+                                />
+                            </div>
                         </div>
                     </>
                 ),
@@ -39,10 +67,28 @@ const aboutData = [
                 icons: (
                     <>
                         {/* desktop */}
-                        <img className="hidden sm:block" src="https://skillicons.dev/icons?i=nodejs,mongodb,nestjs,express,mysql,docker,firebase" />
+                        <div className="hidden sm:block">
+                            <Image
+                                loader={({ src, width, quality }) => src}
+                                src={"https://skillicons.dev/icons?i=nodejs,mongodb,nestjs,express,mysql,docker,firebase"}
+                                width={0}
+                                height={0}
+                                style={{ width: "100%", height: "100%" }} // optional
+                                alt="iconsSkillBackEnd"
+                            />
+                        </div>
                         {/* mobile */}
                         <div className="sm:hidden">
-                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=nodejs,mongodb,nestjs,express,mysql,docker,firebase" />
+                            <div className="h-[30px] mx-auto">
+                                <Image
+                                    loader={({ src, width, quality }) => src}
+                                    src={"https://skillicons.dev/icons?i=nodejs,mongodb,nestjs,express,mysql,docker,firebase"}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "100%", height: "100%" }} // optional
+                                    alt="iconsSkillBackEnd"
+                                />
+                            </div>
                         </div>
                     </>
                 ),
@@ -52,10 +98,28 @@ const aboutData = [
                 icons: (
                     <>
                         {/* desktop */}
-                        <img className="hidden sm:block" src="https://skillicons.dev/icons?i=postman,figma,github,git,photoshop,premiere" />
+                        <div className="hidden sm:block">
+                            <Image
+                                loader={({ src, width, quality }) => src}
+                                src={"https://skillicons.dev/icons?i=postman,figma,github,git,photoshop,premiere"}
+                                width={0}
+                                height={0}
+                                style={{ width: "100%", height: "100%" }} // optional
+                                alt="iconsSkillTool"
+                            />
+                        </div>
                         {/* mobile */}
                         <div className="sm:hidden">
-                            <img className="h-[30px] mx-auto" src="https://skillicons.dev/icons?i=postman,figma,github,git,photoshop,premiere" />
+                            <div className="h-[30px] mx-auto">
+                                <Image
+                                    loader={({ src, width, quality }) => src}
+                                    src={"https://skillicons.dev/icons?i=postman,figma,github,git,photoshop,premiere"}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "100%", height: "100%" }} // optional
+                                    alt="iconsSkillTool"
+                                />
+                            </div>
                         </div>
                     </>
                 ),

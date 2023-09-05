@@ -48,7 +48,7 @@ function Home() {
 
                     {/* subtitle */}
                     <motion.p className={`max-w-sm mb-10 mx-auto ${dtSubtitle}`} variants={fadeIn("down", 0.3)} initial="hidden" animate="show" exit="hidden">
-                        I'm deeply passionate about coding, constantly striving to improve, and adept at creative problem-solving. Every day is a new opportunity to enhance my
+                        I&apos;m deeply passionate about coding, constantly striving to improve, and adept at creative problem-solving. Every day is a new opportunity to enhance my
                         programming skills and create innovative solutions.
                     </motion.p>
 
