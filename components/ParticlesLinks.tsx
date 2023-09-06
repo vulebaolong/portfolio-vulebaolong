@@ -6,8 +6,6 @@ import { Engine } from "tsparticles-engine";
 function ParticlesLinks() {
     // init
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(typeof engine);
-
         await loadFull(engine);
     }, []);
 

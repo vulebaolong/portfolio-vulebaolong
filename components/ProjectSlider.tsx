@@ -50,7 +50,7 @@ import { BsArrowRight } from "react-icons/bs";
 // next image
 import Image from "next/image";
 
-function WorkSlider() {
+function ProjectSlider() {
     return (
         <Swiper
             spaceBetween={10}
@@ -102,4 +102,4 @@ function WorkSlider() {
     );
 }
 
-export default WorkSlider;
+export default ProjectSlider;

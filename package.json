@@ -14,6 +14,8 @@
     "@types/react-dom": "18.2.7",
     "antd": "^5.8.6",
     "autoprefixer": "10.4.15",
+    "axios": "^1.5.0",
+    "date-fns": "^2.30.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.2",
@@ -34,5 +36,8 @@
     "tsparticles-preset-triangles": "^2.12.0",
     "typescript": "5.2.2",
     "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0"
   }
 }

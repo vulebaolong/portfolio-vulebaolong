@@ -1,12 +1,12 @@
 // components
-import WorkSlider from "@/components/WorkSlider";
 import CirclesLeft from "@/components/CirclesLeft";
+import ProjectSlider from "@/components/ProjectSlider";
+import BulbRight from "@/components/BulbRight";
+import ParticlesColors from "@/components/ParticlesColors";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
-import ParticlesColors from "@/components/ParticlesColors";
-import BulbRight from "@/components/BulbRight";
 
 function Work() {
     return (
@@ -33,7 +33,7 @@ function Work() {
 
                     <motion.div variants={fadeIn("down", 0.6)} initial="hidden" animate="show" exit="hidden" className="w-full xl:max-w-[65%]">
                         {/* slider */}
-                        <WorkSlider />
+                        <ProjectSlider />
                     </motion.div>
                 </div>
             </div>
