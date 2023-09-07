@@ -20,11 +20,11 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
     return (
-        <div className={`page bg-site bg-cover bg-no-repeat text-white ${sora.variable} font-sora relative`}>
+        <div className={`w-full min-h-screen xl:h-screen overflow-y-auto xl:overflow-y-hidden overflow-x-hidden bg-site bg-cover bg-no-repeat text-white ${sora.variable} font-sora relative`}>
             <TopLeftImg />
             <Nav />
             <Header />
-            <main className="h-screen">{children}</main>
+            <main className="xl:h-full">{children}</main>
         </div>
     );
 }

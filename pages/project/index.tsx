@@ -8,17 +8,17 @@ import ParticlesColors from "@/components/ParticlesColors";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 
-function Work() {
+function Project() {
     return (
-        <section className="h-full bg-primary/30 py-36 flex items-center">
-            <div className="w-full h-screen absolute right-0 bottom-0 z-0">
+        <section className="pt-[137px] pb-[137px] xl:pt-[90px] xl:pb-0 min-h-screen h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+            <CirclesLeft />
+
+            <div className="w-full h-full sm:h-screen absolute right-0 bottom-0">
                 <ParticlesColors />
             </div>
 
-            <CirclesLeft />
-
             {/* body */}
-            <div className="container mx-auto relative">
+            <div className="container mx-auto relative h-full xl:pt-20">
                 <div className="flex flex-col xl:flex-row gap-x-8">
                     {/* text */}
                     <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
@@ -43,4 +43,4 @@ function Work() {
     );
 }
 
-export default Work;
+export default Project;

@@ -59,10 +59,10 @@ const About = () => {
     }, []);
 
     return (
-        <section className="h-full bg-primary/30 py-32 text-center xl:text-left">
+        <section className="pt-[137px] pb-[137px] xl:pt-[90px] xl:pb-0 min-h-screen h-full text-center xl:text-left bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
             <CirclesRight />
 
-            <div className="w-[1200px] h-screen absolute right-0 bottom-0">
+            <div className="w-full h-full sm:w-[1200px] sm:h-screen absolute right-0 bottom-0">
                 <ParticlesTriangles />
             </div>
 
@@ -72,7 +72,7 @@ const About = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className={`w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32  ${dtAvatar}`}
+                className={`hidden sm:block w-full h-full max-w-[737px] max-h-[678px] absolute bottom-0  ${dtAvatar}`}
             >
                 <AvatarLeft />
             </motion.div>
@@ -143,7 +143,7 @@ const About = () => {
                 </div>
 
                 {/* info */}
-                <motion.div variants={fadeIn("left", 0.4)} initial="hidden" animate="show" exit="hidden" className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+                <motion.div variants={fadeIn("left", 0.4)} initial="hidden" animate="show" exit="hidden" className="flex flex-col w-full xl:max-w-[48%]">
                     <Info />
                 </motion.div>
             </div>

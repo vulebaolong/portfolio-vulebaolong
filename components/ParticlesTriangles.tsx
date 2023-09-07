@@ -15,7 +15,7 @@ function ParticlesTriangles() {
 
     return (
         <Particles
-            className="w-full h-full absolute top-0 left-0 translate-z-0"
+            className="w-full h-full"
             id="ParticlesTriangles"
             init={particlesInit}
             loaded={particlesLoaded}

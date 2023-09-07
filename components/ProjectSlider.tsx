@@ -50,7 +50,7 @@ function ProjectSlider() {
                 clickable: true,
             }}
             modules={[Pagination]}
-            className="h-[280px] sm:h-[520px] !pb-10"
+            className=" sm:h-[520px] !pb-10"
         >
             {workSlides.map((slide, index) => {
                 return (

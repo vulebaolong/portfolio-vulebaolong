@@ -13,7 +13,7 @@ function ParticlesLinks() {
 
     return (
         <Particles
-            className="w-full h-full absolute top-0 left-0 translate-z-0"
+            className="w-full h-full translate-z-0"
             id="ParticlesLinks"
             init={particlesInit}
             loaded={particlesLoaded}

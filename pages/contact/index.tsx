@@ -28,11 +28,11 @@ function Contact() {
         console.log("Failed:", errorInfo);
     };
     return (
-        <section className="h-full bg-primary/30">
+        <section className="pt-[137px] pb-[137px] xl:pt-[90px] xl:pb-0 min-h-screen h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
             <BulbLeft />
-            <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+            <div className="container mx-auto text-center xl:text-left xl:pt-20">
                 {/* text & form */}
-                <div className="flex flex-col w-full max-w-[700px]">
+                <div className="w-full max-w-[700px] mx-auto">
                     {/* text */}
                     <motion.h2 variants={fadeIn("up", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2 text-center mb-12">
                         Lets <span className="text-accent">connect.</span>

@@ -34,7 +34,7 @@ function Nav() {
     const dtNav_div = `xl:flex-col md:px-40 xl:px-0 xl:h-max xl:text-xl xl:rounded-full justify-center`;
     const dtTooltip = `xl:group-hover:flex`;
     return (
-        <nav className={`flex flex-col items-center gap-y-4 fixed h-max bottom-0 mt-auto z-50 top-0 w-full ${dtNav}`}>
+        <nav className={`flex flex-col items-center gap-y-4 fixed h-max bottom-0 z-50  w-full ${dtNav}`}>
             {/* inner */}
             <div className={`flex w-full items-center justify-between gap-y-10 px-4 py-8 h-[80px] bg-white/10 backdrop-blur-sm text-3xl ${dtNav_div}`}>
                 {navData.map((link, index) => {
