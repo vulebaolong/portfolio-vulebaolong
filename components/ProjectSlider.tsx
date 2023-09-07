@@ -9,38 +9,30 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 // data
-const workSlides: { title: string; path: string }[] = [
+const workSlides: { title: string; path: string; logo: string, link: string }[] = [
     {
-        title: "title",
+        title: "Netflix",
+        logo: "/logo_Netflix.png",
         path: "/thumb1.jpg",
+        link: "https://netflix-vulebaolong.netlify.app/"
     },
     {
-        title: "title",
+        title: "L9 Learning",
+        logo: "/logo_l9learning.png",
         path: "/thumb2.jpg",
+        link: "https://l9-learning-vulebaolong.netlify.app/"
     },
     {
-        title: "title",
+        title: "API Netflix",
+        logo: "/logo_Netflix.png",
         path: "/thumb3.jpg",
+        link: "https://netflix-vulebaolong.netlify.app/api"
     },
     {
-        title: "title",
+        title: "API L9 Learning",
+        logo: "/logo_l9learning.png",
         path: "/thumb4.jpg",
-    },
-    {
-        title: "title",
-        path: "/thumb4.jpg",
-    },
-    {
-        title: "title",
-        path: "/thumb1.jpg",
-    },
-    {
-        title: "title",
-        path: "/thumb2.jpg",
-    },
-    {
-        title: "title",
-        path: "/thumb3.jpg",
+        link: "https://l9-learning-vulebaolong.netlify.app/api"
     },
 ];
 
@@ -64,7 +56,7 @@ function ProjectSlider() {
                 return (
                     <SwiperSlide key={index}>
                         <div key={index} className="cursor-pointer w-full h-full relative rounded-lg overflow-hidden flex items-center justify-center group">
-                            <div className="w-full h-full flex items-center justify-center overflow-hidden group">
+                            <a target="_blank" href={slide.link} className="w-full h-full flex items-center justify-center overflow-hidden xl:group">
                                 {/* image */}
                                 <Image
                                     src={slide.path}
@@ -76,24 +68,38 @@ function ProjectSlider() {
                                 />
 
                                 {/* overlay gradient */}
-                                <div className="w-full h-full absolute inset-0 bg-gradient-to-r from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                                <div className="w-full h-full absolute inset-0 bg-gradient-to-r from-transparent via-[#e838cc] to-[#4a22bd] opacity-50 xl:opacity-0 group-hover:xl:opacity-80 transition-all duration-700"></div>
 
                                 {/* title */}
-                                <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                                <div className="absolute bottom-0 xl:translate-y-full -translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                                     <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                                         {/* title 1 */}
                                         <div className="delay-100">LIVE</div>
 
                                         {/* title 2 */}
-                                        <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">PROJECT</div>
+                                        <div className="xl:translate-y-[500%] group-hover:xl:translate-y-0 transition-all duration-300 delay-150">PROJECT</div>
 
                                         {/* icon */}
-                                        <div className="ttext-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                                        <div className="text-xl xl:translate-y-[500%] group-hover:xl:translate-y-0 transition-all duration-300 delay-200">
                                             <BsArrowRight />
                                         </div>
                                     </div>
+                                    {/* name project */}
+                                    <div className="text-xl flex items-center gap-1 font-medium xl:translate-y-[500%] group-hover:xl:translate-y-0 transition-all duration-300 delay-250">
+                                        <div className="h-[26px]">
+                                            <Image
+                                                src={slide.logo}
+                                                width={0}
+                                                height={0}
+                                                sizes="100vw"
+                                                style={{ width: "100%", height: "100%", objectFit: "cover" }} // optional
+                                                alt="imgSlideWork"
+                                            />
+                                        </div>
+                                        <span className="leading-none">{slide.title}</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </SwiperSlide>
                 );
