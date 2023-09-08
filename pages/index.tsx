@@ -2,15 +2,15 @@
 import Typewriter from "typewriter-effect";
 
 // components
-import ProjectsBtn from "@/components/ProjectsBtn";
-import ParticlesLinks from "@/components/ParticlesLinks";
-import AvatarRight from "@/components/AvatarRight";
+import ParticlesLinks from "@/components/Particles/ParticlesLinks";
+import AvatarRight from "@/components/Avatar/AvatarRight";
 
 // framer motion
 import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "@/variants";
+import ProjectsBtn from "./Home/ProjectsBtn";
 
 function Home() {
     const handleDownloadCv = () => {

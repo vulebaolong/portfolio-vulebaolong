@@ -1,7 +1,7 @@
 // components
-import Bulb from "@/components/BulbRight";
-import Circles from "@/components/CirclesRight";
-import ServiceSlider from "@/components/ServiceSlider";
+import Bulb from "@/components/Bulb/BulbRight";
+import Circles from "@/components/Circles/CirclesRight";
+import ServiceSlider from "@/pages/services/ServiceSlider";
 import { fadeIn } from "@/variants";
 
 // framer motion

@@ -10,7 +10,7 @@ const sora = Sora({
 
 // components
 import Nav from "./Nav";
-import Header from "./Header";
+import Header from "./Header/Header";
 import TopLeftImg from "./TopLeftImg";
 import { ReactNode } from "react";
 

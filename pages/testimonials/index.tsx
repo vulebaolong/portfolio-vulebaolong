@@ -1,10 +1,9 @@
 // components
-import TestimonialSlider from "@/components/TestimonialSlider";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
-import BulbLeft from "@/components/BulbLeft";
+import TestimonialSlider from "./TestimonialSlider";
 
 function Testimonials() {
     return (
@@ -20,8 +19,6 @@ function Testimonials() {
                     <TestimonialSlider />
                 </motion.div>
             </div>
-
-            <BulbLeft />
         </section>
     );
 }

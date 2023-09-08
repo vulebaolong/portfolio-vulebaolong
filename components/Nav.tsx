@@ -31,12 +31,11 @@ function Nav() {
     const pathname = router.pathname;
 
     const dtNav = `xl:justify-center xl:right-[2%] xl:w-16 xl:max-w-md xl:h-screen`;
-    const dtNav_div = `xl:flex-col md:px-40 xl:px-0 xl:h-max xl:text-xl xl:rounded-full justify-center`;
-    const dtTooltip = `xl:group-hover:flex`;
+    const dtNav_div = `xl:flex-col xl:text-xl `;
     return (
-        <nav className={`flex flex-col items-center gap-y-4 fixed h-max bottom-0 z-50  w-full ${dtNav}`}>
+        <nav className={`bottom-3 flex flex-col items-center fixed  z-50 w-full ${dtNav}`}>
             {/* inner */}
-            <div className={`flex w-full items-center justify-between gap-y-10 px-4 py-8 h-[80px] bg-white/10 backdrop-blur-sm text-3xl ${dtNav_div}`}>
+            <div className={`flex text-2xl w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[70px] sm:h-[70px] xl:h-[280px] items-center justify-around rounded-full  bg-white/10 backdrop-blur-sm  ${dtNav_div}`}>
                 {navData.map((link, index) => {
                     return (
                         <div key={index}>

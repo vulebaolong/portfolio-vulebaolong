@@ -1,12 +1,10 @@
-// components
-import CirclesLeft from "@/components/CirclesLeft";
-import ProjectSlider from "@/components/ProjectSlider";
-import BulbRight from "@/components/BulbRight";
-import ParticlesColors from "@/components/ParticlesColors";
-
-// framer motion
+import * as React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import CirclesLeft from "@/components/Circles/CirclesLeft";
+import ParticlesColors from "@/components/Particles/ParticlesColors";
+import BulbRight from "@/components/Bulb/BulbRight";
+import ProjectSlider from "./ProjectSlider";
 
 function Project() {
     return (
@@ -31,8 +29,7 @@ function Project() {
                         </motion.p>
                     </div>
 
-                    <motion.div variants={fadeIn("down", 0.6)} initial="hidden" animate="show" exit="hidden" className="w-full xl:max-w-[65%]">
-                        {/* slider */}
+                    <motion.div variants={fadeIn("down", 0.6)} initial="hidden" animate="show" exit="hidden" className=" w-full xl:max-w-[65%] aspect-[1280/720]">
                         <ProjectSlider />
                     </motion.div>
                 </div>
@@ -42,5 +39,4 @@ function Project() {
         </section>
     );
 }
-
 export default Project;

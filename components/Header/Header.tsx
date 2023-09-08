@@ -1,9 +1,3 @@
-// next image
-import Image from "next/image";
-
-// next link
-import Link from "next/link";
-
 // components
 import Socials from "./Socials";
 import Logo from "./Logo";
