@@ -33,7 +33,7 @@ function Nav() {
     const dtNav = `xl:justify-center xl:right-[2%] xl:w-16 xl:max-w-md xl:h-screen`;
     const dtNav_div = `xl:flex-col xl:text-xl `;
     return (
-        <nav className={`bottom-3 flex flex-col items-center fixed  z-50 w-full ${dtNav}`}>
+        <nav className={`bottom-3 flex flex-col items-center fixed z-50 w-full ${dtNav}`}>
             {/* inner */}
             <div className={`flex text-2xl w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[70px] sm:h-[70px] xl:h-[280px] items-center justify-around rounded-full  bg-white/10 backdrop-blur-sm  ${dtNav_div}`}>
                 {navData.map((link, index) => {

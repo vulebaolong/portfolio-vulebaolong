@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
-import Head from 'next/head'
+import Head from "next/head";
 
 // components
 import Layout from "@/components/Layout";

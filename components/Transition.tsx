@@ -21,28 +21,28 @@ function Transition() {
     return (
         <>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-[53] bg-[#2e2257]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+                transition={{ delay: 0.1, duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#3b2d71]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-[52] bg-[#3b2d71]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
+                transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#4b2792]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-[51] bg-[#4b2792]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
+                transition={{ delay: 0.4, duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
         </>
     );
