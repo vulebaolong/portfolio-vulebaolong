@@ -123,6 +123,7 @@ function ProjectSlider() {
                                 sizes="100vw"
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }} // optional
                                 alt="imgSlideWork"
+                                priority={true}
                             />
                             {/* overlay gradient */}
                             <div className="w-full h-full absolute inset-0 bg-gradient-to-r from-transparent via-[#e838cc] to-[#4a22bd] opacity-50 xl:opacity-0 group-hover:xl:opacity-80 transition-all duration-700"></div>
@@ -151,6 +152,7 @@ function ProjectSlider() {
                                             sizes="100vw"
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }} // optional
                                             alt="imgSlideWork"
+                                            priority={true}
                                         />
                                     </div>
                                     <span className="leading-none">{workSlides[imageIndex].title}</span>
