@@ -50,7 +50,7 @@ function ProjectSlider() {
                 clickable: true,
             }}
             modules={[Pagination]}
-            className=" sm:h-[520px] !pb-10"
+            className="!pb-10"
         >
             {workSlides.map((slide, index) => {
                 return (
@@ -86,7 +86,7 @@ function ProjectSlider() {
                                     </div>
                                     {/* name project */}
                                     <div className="text-xl flex items-center gap-1 font-medium xl:translate-y-[500%] group-hover:xl:translate-y-0 transition-all duration-300 delay-250">
-                                        <div className="h-[26px]">
+                                        <div className="h-[26px] aspect-square">
                                             <Image
                                                 src={slide.logo}
                                                 width={0}
