@@ -50,9 +50,9 @@ function Counter() {
         fetchData();
     }, []);
     return (
-        <div className="flex w-full h-full xl:gap-x-6 justify-between xl:justify-start">
+        <div className="flex w-full h-full justify-evenly xl:justify-between items-center flex-wrap gap-5">
             {/* years of experience */}
-            <div className="">
+            <div >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                     <CountUp start={0} end={infoGithub?.yearsDifference} duration={5} /> +
                 </div>
@@ -63,10 +63,10 @@ function Counter() {
                 </div>
             </div>
 
-            <div className="w-[1px] h-full bg-white/20"></div>
+            <div className="hidden sm:block w-[1px] h-[80px] bg-white/20"></div>
 
             {/* day of experience */}
-            <div className="">
+            <div >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                     <CountUp start={0} end={infoGithub?.daysDifference} duration={5} /> +
                 </div>
@@ -77,10 +77,10 @@ function Counter() {
                 </div>
             </div>
 
-            <div className="w-[1px] h-full bg-white/20"></div>
+            <div className="hidden sm:block w-[1px] h-[80px] bg-white/20"></div>
 
             {/* Total Repositories */}
-            <div className="">
+            <div >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                     <CountUp start={0} end={infoGithub?.totalRepo} duration={5} /> +
                 </div>
