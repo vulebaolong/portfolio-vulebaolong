@@ -10,7 +10,8 @@ function HomePageV2() {
     const handleDownloadCv = () => {
         console.log(123);
         // https://drive.google.com/u/0/uc?id=1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO&export=download
-        window.open("https://drive.google.com/u/0/uc?id=1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO&export=download", "_blank");
+        // window.open("https://drive.google.com/u/0/uc?id=1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO&export=download", "_blank");
+        window.open("https://drive.google.com/file/d/1kjlBbByUWDnSdj5kQHL57gK18BIuO7MO/view?usp=drive_link", "_blank");
     };
 
     const dtSubtitle = `xl:max-w-xl xl:mx-0 xl:mb-16`;
