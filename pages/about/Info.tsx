@@ -188,6 +188,22 @@ const aboutData = [
                 ),
                 icons: [],
             },
+            {
+                title: (
+                    <>
+                        <p>Professional Front end Developer - Cybersoft Academy</p>
+                        <p className="flex gap-1 items-center justify-center xl:justify-start">
+                            <span>Date: 18/09/2023</span>
+                            <span> - </span>
+                            <a className="flex items-center underline" target="_blank" href="https://drive.google.com/file/d/1MuBoo5Mk6jsV_zuVxvxmAgbnDIS5MmdK/view?usp=drive_link">
+                                <BsLink45Deg />
+                                Link
+                            </a>
+                        </p>
+                    </>
+                ),
+                icons: [],
+            },
         ],
     },
 ];
